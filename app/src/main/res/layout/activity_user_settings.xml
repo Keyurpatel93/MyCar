@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TabWidget android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            </TabWidget>
+        <FrameLayout android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+            <LinearLayout
+                android:id="@+id/tab1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="My Settings"
+                    android:layout_marginBottom="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Max Speed Set:"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numeric="integer"
+                        android:id="@+id/maxSpeedView"
+                        />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:text="Seatbelt Enforced"
+                    android:id="@+id/enforceSeatBeltCheckBox"
+                    android:clickable="false"
+                    android:contextClickable="true"/>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+
+                        android:src="@drawable/seat"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:id="@+id/seatImgView"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Position: XX"
+                        android:textColor="#ffffff"
+                        android:id="@+id/lowerSeatPositionView"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignEnd="@+id/seatImgView"
+                        android:layout_centerInParent="true"
+                        android:editable="false"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Radio1"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_toRightOf="@id/seatImgView"
+                        android:id="@+id/radio1View"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Radio2"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_below="@id/radio1View"
+                        android:layout_toRightOf="@id/seatImgView"
+                        android:id="@+id/radio2View"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Radio3"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_below="@id/radio2View"
+                        android:id="@+id/radio3View"
+                        android:layout_toRightOf="@id/seatImgView"/>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <Button
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:id="@+id/editBtn"
+                    android:background="#00BFFF"
+                    android:padding="10dp"
+
+                    android:textColor="#FFFFFF"
+                    android:layout_marginRight="15dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update Settings"
+                    android:id="@+id/updateSettingsBtn"
+                    android:background="#00BFFF"
+                    android:padding="10dp"
+                    android:textColor="#FFFFFF"
+                    />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                </View>
+                <Button
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Deactivate"
+                    android:id="@+id/deactivateBtn"
+                    android:background="@color/warning_color"
+                    android:padding="10dp"
+                    android:textColor="#FFFFFF"
+
+                    />
+            </LinearLayout>
+            <FrameLayout android:id="@+id/tab2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include layout="@layout/drivers_list" />
+
+            </FrameLayout>
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</TabHost>

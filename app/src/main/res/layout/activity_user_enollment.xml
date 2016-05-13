@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.msu.cse.patelke6.prototype.MainOpenXc"
+    android:orientation="vertical"
+    android:layout_gravity="top"
+    >
+
+
+
+    <ImageView
+        android:layout_width="225dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="32dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitCenter"
+        android:src="@drawable/_car"
+        android:clickable="true"
+        android:id="@+id/carImageView"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:text="Enter the key to enroll into car"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:hint="First Name"
+            android:imeOptions="actionGo"
+            android:id="@+id/firstNameView"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="18dp"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:hint="Last Name"
+            android:imeOptions="actionGo"
+            android:id="@+id/lastNameView"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Enter Car Key"
+        android:imeOptions="actionGo"
+        android:id="@+id/carKeyInputText"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="20dp"
+        />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enroll As Admin"
+            android:layout_marginStart="15dp"
+            android:textColorHint="#00BFFF"
+            android:checked="false"
+            android:buttonTint="#00BFFF"
+            android:id="@+id/adminCheckBox"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:hint="Enter Car Key"
+            android:imeOptions="actionGo"
+            android:id="@+id/carAdminKeyInputText"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="20dp"
+           />
+        <Button
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:text="Submit"
+            android:id="@+id/submitBtn"
+            android:background="#00BFFF"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+           />
+
+
+</LinearLayout>

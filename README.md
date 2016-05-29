@@ -32,7 +32,10 @@ A driver enters the car and sits in the driver seat. Upon turning on the car, th
 
 
 Need fingerprint permission to allow the application to authenticate using the fingerprint sensor.
-Need read/write permission to read and write to a xml file that stores data for the application. The xml file called “cardata.xml” which is located at the root of the internal storage, stores settings data (seat position, constraints) for enrolled users. 	
+Need read/write permission to read and write to a xml file that stores data for the application. The xml file called “cardata.xml” which is located at the root of the internal storage, stores settings data (seat position, constraints) for enrolled users.
+
+## License
+Licensed under the BSD license.
 
 ##Screenshot
 ![Alt text](https://github.com/Keyurpatel93/MyCar-/blob/master/MyCar.png?raw=true "Screenshot")

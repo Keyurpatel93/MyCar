@@ -18,7 +18,7 @@ A driver enters the car and sits in the driver seat. Upon turning on the car, th
 
 ## Dependencies:
 - **Hardware**:
-  - Android Device with a fingerprint sensor running Android 6.0 or later
+  - Android Device with a fingerprint sensor running Android 6.0 or later.
 - **Software**: 
   - [AndroidViewAnimations] (https://github.com/daimajia/AndroidViewAnimations)
   - [OpenXC] (http://openxcplatform.com/android/getting-started.html)
